@@ -1,37 +1,20 @@
-import {Alert} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-//Show Popup Alert
-const showPopupWithOk = (title, message, okClicked) => {
-  Alert.alert(title ? title : 'RN', message ? message : '', [
-    {text: 'OK', onPress: () => okClicked && okClicked()},
-  ]);
+// Set Async Storage Data
+const setAsyncStorageData = async (key, value) => {
+  const stringData = JSON.stringify(value);
+  await AsyncStorage.setItem(key, stringData);
 };
 
-//Show Popup with ok and cancel
-const showPopupWithOkAndCancel = (title, message, okClicked, cancelClicked) => {
-  Alert.alert(title ? title : 'RN', message ? message : '', [
-    {
-      text: 'cancel',
-      onPress: () => cancelClicked && cancelClicked(),
-      style: 'cancel',
-    },
-    {
-      text: 'OK',
-      onPress: () => okClicked && okClicked(),
-    },
-  ]);
+// Get Async Storage Data
+const getAsyncStorageData = async key => {
+  const data = await AsyncStorage.getItem(key);
+  return JSON.parse(data);
 };
 
-// validate
-const validateField = (val, msg) => {
-  if (!val) {
-    return {
-      status: false,
-      msg: msg,
-    };
-  } else {
-    return {status: true, msg: ''};
-  }
+// Remove Async Storage Data
+const removeAsyncStorageData = async key => {
+  await AsyncStorage.removeItem(key);
 };
 
-export {showPopupWithOk, showPopupWithOkAndCancel, validateField};
+export {getAsyncStorageData, setAsyncStorageData, removeAsyncStorageData};
