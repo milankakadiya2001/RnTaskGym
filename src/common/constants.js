@@ -42,3 +42,7 @@ export function moderateScale(size) {
     return Math.round(newSize);
   }
 }
+
+export const GYM_LIKES = 'GYM_LIKES';
+export const POPULAR_CLASSES_LIKES = 'POPULAR_CLASSES_LIKES';
+export const CLASSES_LIKES = 'CLASSES_LIKES';

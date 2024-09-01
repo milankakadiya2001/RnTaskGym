@@ -16,7 +16,7 @@ const localStyles = style =>
   StyleSheet.create({
     root: {
       ...styles.flex,
-      backgroundColor: colors.white,
+      backgroundColor: colors.backgroundColor,
       ...style,
     },
   });

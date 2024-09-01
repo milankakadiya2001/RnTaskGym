@@ -1,0 +1,18 @@
+export default {
+  crossfit_class: require('./crossfit_class.png'),
+  fitness_class: require('./fitness_class.png'),
+  fitness_with_some_friends: require('./fitness_with_some_friends.png'),
+  gym_non_stop: require('./gym_non_stop.png'),
+  gym_rebel: require('./gym_rebel.png'),
+  yoga_class: require('./yoga_class.png'),
+  map: require('./map.png'),
+  popularClasses1: require('./popularClasses1.png'),
+  popularClasses2: require('./popularClasses2.png'),
+  popularClasses3: require('./popularClasses3.png'),
+  popularClasses4: require('./popularClasses4.png'),
+  popularClasses6: require('./popularClasses6.png'),
+  popularClasses7: require('./popularClasses7.png'),
+  popularClasses8: require('./popularClasses8.png'),
+  popularClasses9: require('./popularClasses9.png'),
+  popularClasses10: require('./popularClasses10.png'),
+};

@@ -3,7 +3,8 @@ export const colors = {
   textColor: '#212121',
   white: '#FFFFFF',
   black: '#000000',
-  primary: '#335EF7',
+  backgroundColor: '#F2F2F7',
+  primary: '#3173C2',
   grayScale1: '#F5F5F5',
   grayScale2: '#EEEEEE',
   grayScale3: '#E0E0E0',
@@ -14,4 +15,5 @@ export const colors = {
   placeHolderColor: '#9E9E9E',
   borderColor: '#35383F',
   alertColor: '#F75555',
+  yellow: '#FCAD32',
 };
